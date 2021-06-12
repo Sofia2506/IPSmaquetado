@@ -88,3 +88,9 @@ a.buttom button{
         text-align: center;
     }
 }
+/*Inicio del bloque 2*/
+.Bloque2{
+    height: 100px;
+    margin-top:50px;
+    background-color: #32186b;
+}
