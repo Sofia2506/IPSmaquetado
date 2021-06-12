@@ -42,7 +42,7 @@ a.buttom button{
     padding:10px 15px;
     border-radius: 5px;
  }
- nav a.buttom button:hover{
+a.buttom button:hover{
     background-color:#32186b ;
  }
  /*Inicio del bloque1*/
