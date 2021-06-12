@@ -92,5 +92,36 @@ a.buttom button{
 .Bloque2{
     height: 100px;
     margin-top:50px;
-    background-color: #32186b;
+    margin-bottom: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+    max-width: 1900px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.Bloque2 .tarjeta{
+    width: 300px;
+    padding:30px;
+    margin:20px;
+}
+.Bloque2 .tarjeta .box-img{
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.Bloque2 .tarjeta img{
+    position: relative;
+    width: 60px;
+}
+.subtitulo{
+    color:#5125ae;
+}
+.texto{
+    color: #9FAFC1;
+
 }
