@@ -4,9 +4,14 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="Stylesheet" href="estilos.css">
-    <link rel="stylesheet" href="normalize.css">
+    <link rel="Stylesheet" href="css/estilos.css">
+    <link rel="stylesheet" href="css/normalize.css">
     <title>Maquetado</title>
+    <!--GLIDE.JS-->
+    <script src="js/glide.min.js" charset="utf-8"></script>
+    <link rel="stylesheet" href="css/glide.core.min.css">
+    <link rel="stylesheet" href="css/glide.theme.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css">
 </head>
 <body>
     <header>
@@ -57,33 +62,85 @@
     </section>
     <section class="Bloque3">
         <div class="video">
+            <img class="video-play" src="img/play.png">
             <h3 class="subtitulo">WATCH VIDEO</h3>
             <h2 class="subtitulo">¿Qué es la salud Mental?</h2>
-            <p class="subtitulo">Te damos los concimientos básicos para que estés informado de las enfermedades mentales y la importancia acerca de la gravedad que pueden ocasionar a cualquiera.</p>
+            <p class="texto">Te damos los concimientos básicos para que estés informado de las enfermedades mentales y la importancia acerca de la gravedad que pueden ocasionar a cualquiera.</p>
         </div>
 
     </section>
     <section class="Bloque4">
-        <img src="">
+        <img src="img/imagen.png" class="img-enfermedades">
         <div class="enfermedades">
             <h2 class="subtitulo">Enfermedades Mentales</h2>
             <p class="texto">Provide an overview of this product's secondary benefits.</p>
             <div class="tabla-enfermedades">
-                <div class="imagen"></div>
-                <h3 class="subtitulo">Enfermedad Mental 1</h3>
-                <p class="texto">Use this space to describe this benefit.</p>
-                <h3 class="subtitulo">Enfermedad Mental 2</h3>
-                <p class="texto">Use this space to describe this benefit.</p>
-                <h3 class="subtitulo">Enfermedad Mental 3</h3>
-                <p class="texto">Use this space to describe this benefit.</p>
+                <img src="img/icon1.png" class="imagen">
+                <div class="enfer-info">
+                    <h3 class="subtitulo">Enfermedad Mental 1</h3>
+                    <p class="texto">Use this space to describe this benefit.</p>
+                </div>
+                <img src="img/icon2.png" class="imagen">
+                <div class="enfer info">
+                    <h3 class="subtitulo">Enfermedad Mental 2</h3>
+                    <p class="texto">Use this space to describe this benefit.</p>
+                </div>
+                <img src="img/icon3.png" class="imagen">
+                <div class="enfer-info">
+                    <h3 class="subtitulo">Enfermedad Mental 3</h3>
+                    <p class="texto">Use this space to describe this benefit.</p>
+                </div>
             </div>
         </div>
     </section>
     <section class="Bloque5">
         <h2 class="subtitulo">Contacto Profesional</h2>
         <p class="texto">Contactos especializados en salud mental</p>
+        <div class="images glide">
+            <div class="glide__track" data-glide-el="track">                  
+                <ul class="glide__slides">
+                    <li class="glide__slide">
+                        <img src="img/contactoImg.png">
+                    </li>
+
+                    <li class="glide__slide">
+                        <img src="img/contactoImg.png">
+                    </li>
+
+                    <li class="glide__slide">
+                        <img src="img/contactoImg.png">
+                    </li>
+
+                    <li class="glide__slide">
+                        <img src="img/contactoImg.png">
+                    </li>
+
+                    <li class="glide__slide">
+                        <img src="img/contactoImg.png">
+                    </li>
+
+                    <li class="glide__slide">
+                        <img src="img/contactoImg.png">
+                    </li>
+
+                    <li class="glide__slide">
+                        <img src="img/contactoImg.png">
+                    </li>
+
+                    <li class="glide__slide">
+                        <img src="img/contactoImg.png">
+                    </li>
+                </ul>
+            </div>
+
+            <div class="glide__arrows" data-glide-el="controls">
+                <button class="glide__arrow glide__arrow--left" data-glide-dir="<"><i class="fas fa-angle-left"></i></button>
+                <button class="glide__arrow glide__arrow--right" data-glide-dir=">"><i class="fas fa-angle-right"></i></button>
+            </div>
+        </div>
 
     </section>
+    <script src="js/script2.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
 </body>
 </html>
