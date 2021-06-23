@@ -66,4 +66,8 @@ h1,h2{
     .boxConsejo{
         padding:30px;
     }
+    .boxText p{
+        width: 80%;
+        text-align: center;
+    }
 }
