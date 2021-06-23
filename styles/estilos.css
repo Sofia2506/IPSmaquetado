@@ -193,7 +193,9 @@ header li:nth-child(2),header li:nth-child(3){
     width: 100%;
     opacity: 0.3;
 }
-
+.bloque2 .informateTablet{
+    display: none;
+}
 /*BLOQUE 3*/
 .bloque3{
     height: 1000px;
@@ -234,6 +236,13 @@ header li:nth-child(2),header li:nth-child(3){
         font-size:1.2rem;
     }
 
+    .bloque2 .informateTablet{
+        display: block;
+        
+    }
+    .bloque2 .informateDesktop{
+        display: none;
+    }
 }
 @media screen and (max-width:768px){
     .bloque1 .contenedor{
