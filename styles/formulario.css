@@ -15,17 +15,17 @@ h1,h2{
 .contenido >p{
   font-family: 'Rosario', sans-serif;
   max-width: 800px;
-  margin: 0 auto;
+  margin: 0 40px;
   text-align: center;
 }
 .tarjetaTest{
   background-color: #F2FDFF;
   max-width: 800px;
-  height: 150px;
   border-radius: 10px;
   padding:20px;
   font-family: 'Rosario', sans-serif;
   margin:50px auto;
+  padding:40px ;
 }
 .tarjetaTest p{
   width: 80%;
@@ -39,13 +39,14 @@ h1,h2{
 .tarjetaTest .opciones{
   width:100%;
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
   margin-top:30px ;
+  flex-wrap: wrap;
 }
-.tarjetaTest input[type="radio"]{
-  margin-left: 60px;
-} 
+.tarjetaTest  .opcion{
+  min-width: 90px;
+}
 .tarjetaTest label{
   margin-left: 5px;
 }
@@ -63,4 +64,12 @@ h1,h2{
 }
 .buttom:hover{
   background-color: #26747e;
+}
+@media screen and (max-width:600px){
+  .tarjetaTest .opciones{
+    flex-direction: column;
+  }
+  .tarjetaTest .opcion{
+    margin:10px auto;
+  }
 }
