@@ -135,6 +135,12 @@ header li:nth-child(2),header li:nth-child(3){
 .olaBottom{
     bottom: 0;
 }
+.olaBottomMovil{
+    position: absolute;
+    z-index: 1000;
+    bottom: 0;
+    width: 100%;
+}
 .bloque2 .textConsejos{
     height: 100%;
     display: flex;
@@ -191,7 +197,6 @@ header li:nth-child(2),header li:nth-child(3){
 /*BLOQUE 3*/
 .bloque3{
     height: 1000px;
-
 }
 /*BLOQUE 4*/
 /*BLOQUE 5*/
@@ -201,6 +206,7 @@ header li:nth-child(2),header li:nth-child(3){
     cursor: pointer;
     width: 50%;
     z-index: 100000;
+
     display: none;
     height: 100%;
 
@@ -273,6 +279,9 @@ header li:nth-child(2),header li:nth-child(3){
     }
 }
 @media screen and (max-width:650px){
+.bloque1{
+    background-color: #3BAFBF ;
+}
 .bloque1 .contenedor{
     background-image: url(../img/imagen-principal-movil.png);
     background-color: #3BAFBF ;
@@ -287,6 +296,12 @@ header li:nth-child(2),header li:nth-child(3){
 };
 header .navbar li a{
     font-size: 1rem ;
+}
+.olaTop,.olaBottom,.imagen-consejos{
+    display: none;
+}
+.bloque2 .contenedor{
+    display: block;
 }
 }
 @media screen and (max-width:520px){
