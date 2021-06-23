@@ -37,12 +37,8 @@ h1,h2{
 }
 .boxText{
     width: 60%;
-   
 }
 
-.boxText h2{
- 
-}
 .boxText p{
     line-height: 30px;
     width: 60%;
@@ -62,4 +58,12 @@ h1,h2{
 .boxImg img{
     max-width:100%;
 	height:auto;
+}
+@media screen and (max-width:875px){
+    .boxText{
+        width: 100%;
+    }
+    .boxConsejo{
+        padding:30px;
+    }
 }

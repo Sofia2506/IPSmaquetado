@@ -36,6 +36,14 @@ header .navbar a:hover{
 header .test a{
     color: #ffff;
 }
+.boxHeader{
+    position: relative;
+    max-width: 1400px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    justify-content:center;
+}
 header{
     display: flex;
     align-items: center;
@@ -43,8 +51,8 @@ header{
     position: fixed;
     z-index: 1000000;
     width: 100%;
-    max-width: 1440px;
     transition: background-color .5s ease;
+
 }
 header.header-active{
     background-color: #fff;
