@@ -3,6 +3,9 @@
 
 /*Inicio del header*/
 /*Inicio del bloque 1*/
+body{
+    overflow:hidden;
+}
 .bloque1 .contenedor{
     position: relative;
     width: 1440px;
@@ -86,7 +89,7 @@ header li:nth-child(2),header li:nth-child(3){
     justify-content: center;
 }
 
-.bloque2 .contendor{
+.bloque2 .contenedor{
     display: grid;
     grid-template-columns: 1fr 1fr;
     position: relative;
@@ -96,6 +99,7 @@ header li:nth-child(2),header li:nth-child(3){
     user-select: none;
     overflow: hidden;
 }
+
 
 .bloque2 .imagen-consejos{
     width: 100%;
@@ -183,3 +187,72 @@ header li:nth-child(2),header li:nth-child(3){
 }
 /*BLOQUE 4*/
 /*BLOQUE 5*/
+/*Diseño responsive*/
+.burger{
+    cursor: pointer;
+    width: 50%;
+    z-index: 100000;
+    display: none;
+}
+.burger div{
+    width: 25px;
+    height: 3px;
+    background-color: #04bbd3;
+    margin: 5px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+@media screen and (max-width:768px){
+    .burger{
+        display: block;
+    }
+    .bloque1{
+        height: 100vh;
+    }
+    .test{
+        position: relative;
+        left: 80px;
+    }
+    header{
+        background-color: #fff;
+        height: 50px;
+    }
+    .navbar ul{
+        padding:0;
+        position: absolute;
+        right: 0;
+        height: 95vh;
+        top:45px;
+        background-color: #fff;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        width: 50%;
+        margin-top: 0;
+        transform: translateX(100%);
+        transition: transform 0.5s ease-in;
+    }
+    header .navbar li{
+        text-align: center;
+        margin:0;
+        padding-right: 80px;
+
+    }
+    header .navbar li a{
+        font-size:1.7rem;
+    }
+    header .navBar-active{
+        transform: translateX(0);
+    }
+}
+@media screen and (max-width:520px){
+    .burger{
+        cursor: pointer;
+        width: 50%;
+    }
+    .test{
+        position: relative;
+        left: 200px;
+    }
+}
