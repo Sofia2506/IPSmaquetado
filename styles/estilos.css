@@ -1,0 +1,185 @@
+
+@import url('https://fonts.googleapis.com/css2?family=ABeeZee&family=Rosario:wght@400;700&display=swap');
+
+/*Inicio del header*/
+/*Inicio del bloque 1*/
+.bloque1 .contenedor{
+    position: relative;
+    width: 1440px;
+    height: 550px;
+    font-family: 'Rosario', sans-serif;
+    background-image: url(../img/image-principal.webp);
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: contain;
+}
+/*Desarrollo del navbar*/
+header .test{
+    background-color: #3BAFBF;
+    color: #ffff;
+    display: flex;
+    align-items: center;
+    padding: 8px;
+    height: 20px;
+    border-radius: 2px;
+    margin-right: 10px;
+}
+header .test:hover{
+    background-color: #04bbd3;
+}
+header .navbar a:hover{
+    color: #04bbd3;
+}
+header .test a{
+    color: #ffff;
+}
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+header ul{
+    display: flex;
+    
+}
+header a{
+    text-decoration: none;
+    color: #3BAFBF;
+    font-size: 1.4rem;
+    font-weight: 700;
+
+}
+header li {
+    list-style: none;
+}
+header li:nth-child(2),header li:nth-child(3){
+    margin-left: 100px;
+}
+/*Desarrollo del bloque de texto*/
+.contenedor .textSalud{
+    color: #3BAFBF;
+    width: 400px;
+    margin-left: 20px;
+    
+}
+.textSalud h1{
+    font-family: 'ABeeZee', sans-serif;
+    font-size: 3.3rem;
+}
+.textSalud p{
+    font-size: 1.4rem;
+    font-weight: 400;
+}
+.contenedorText{
+    margin-top: 70px;
+    max-width:1000px;
+    min-width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+}
+/*Inicio del bloque 2*/
+
+.bloque2,.bloque1{
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.bloque2 .contendor{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    position: relative;
+    height: 480px;
+    width: 1440px;
+    background-color: #3BAFBF;
+    user-select: none;
+    overflow: hidden;
+}
+
+.bloque2 .imagen-consejos{
+    width: 100%;
+    height:100%;
+    position: relative;
+}
+
+.bloque2 .imagen-consejos img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.olaTop{
+    transform: rotate(180deg);
+}
+
+.olaBottom ,.olaTop{
+    position: absolute;
+    width: 100%;
+    max-width: 1440px;
+    z-index: 1000;
+}
+
+.olaBottom{
+    bottom: 0;
+}
+.bloque2 .textConsejos{
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: #ffff;
+    z-index: 2000;
+}
+.bloque2 .boxTextConsejos{
+    text-align: center;
+    width: 60%;
+} 
+.bloque2 h2{
+    font-family: 'ABeeZee', sans-serif;
+    font-size:2.5rem;
+}
+.bloque2 p{
+    font-family: 'Rosario', sans-serif;
+    font-weight: 400;
+    font-size: 1.1rem;
+}
+.bloque2 .boxVer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.bloque2 .textConsejos a{
+    color:#fff;
+    text-decoration: none;
+    font-family: 'ABeeZee', sans-serif;
+    margin-left: 10px;
+    text-transform: uppercase;
+    position: relative;
+    padding:8px;
+}
+.bloque2 .textConsejos a::before{
+    position:absolute;
+    width: 2px;
+    height: 100%;
+    top: 0px;
+    content: '';
+    background: #FFF;
+    opacity:1;
+    transition: all 0.3s;
+    left: 0px;
+}
+.bloque2 .textConsejos a:hover:before
+{
+    width: 100%;
+    opacity: 0.3;
+}
+
+/*BLOQUE 3*/
+.bloque3{
+    height: 1000px;
+
+}
+/*BLOQUE 4*/
+/*BLOQUE 5*/
