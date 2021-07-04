@@ -5,6 +5,7 @@
 /*Inicio del bloque 1*/
 body{
     overflow-x:hidden;
+    scroll-behavior: smooth;
 }
 .bloque1 .contenedor{
     position: relative;
