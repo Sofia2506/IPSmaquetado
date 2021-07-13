@@ -85,6 +85,9 @@
 }
 
 /*Barra para buscar*/
+.bloque2-busquedas{
+    display: flex;
+}
 .bloque2-buscar{
     background-color: rgba(15, 192, 248, 0.02);
     box-shadow: inset -2px -2px 4px rgba(255, 255, 255, 0.5), inset 2px 2px 4px rgba(170, 170, 204, 0.25), inset 5px 5px 10px rgba(170, 170, 204, 0.5), inset -5px -5px 10px #FFFFFF;
@@ -93,6 +96,7 @@
     justify-content: left;
     padding: 0px 10px;
     width: 200px;
+    margin-right: 30px;
 }
 .bloque2-buscar img{
     width: 17px;
@@ -112,11 +116,10 @@
     text-align: center;
     margin: 25px 0px;
 }
-/*Select para seleccionar el tipo de gráfica*/
+/*Select para sexo*/
 .bloque2-estadísticas select{
     outline: none;
     border: none;
-    margin-bottom: 15px;
     width: 150px;
 }
 
