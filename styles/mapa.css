@@ -110,6 +110,7 @@
     margin-left: auto;
     margin-right: auto;
     font-family: var(--fontText);
+    font-size: 1.1rem;
 
 }
 .comentarios_text-input::placeholder{
@@ -133,7 +134,7 @@
 .comentarios__select option{
     border:none;
     margin-top: 10px;
-    
+    font-size: 1.1rem;
 }
 .comentarios__submit-input{
     color: #ffff;
@@ -141,10 +142,11 @@
     padding:10px; 
     border: none;
     background-color: var(--colorPrimario);
-    width: 80px;
     box-shadow: 4px 4px 6px 0px rgba(0,0,0,0.2);
     width:90px ;
+    font-size: 1.2rem;
     margin:10px;
+    font-family: var(--fontText);
 }
 .comentarios__submit-input:active{
     background-color: #2c90a0;
