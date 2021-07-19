@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=ABeeZee&family=Rosario:wght@400;700&display=swap');
+:root{
+    --colorPrimario:#3BAFBF;
+    --fontTitle:'ABeeZee', sans-serif;
+    --fontText: 'Rosario', sans-serif;
+}
+
+.contenido{
+    margin-top: 80px;
+}
+.comentarios{
+    padding-left: 30px;
+    padding-right: 30px;
+}
+.comentarios__title{
+    color: var(--colorPrimario);
+    font-family: var(--fontTitle);
+    font-weight: 400;
+    font-size: 2.5rem;
+    text-align: center;
+}
+/*Estilos del comentario*/
+.comentario{
+    display: flex;
+    margin-top: 30px;
+}
+.comentario:nth-child(2n){
+    flex-direction: row-reverse;
+}
+.comentario:nth-child(2n) .comentario__datos{
+    background-color:#FF5858;
+}
+.comentario__box-comentario{
+    border-radius: 4px; 
+    font-family: var(--fontText);
+    width: 50%;
+    position: relative;
+    box-shadow: 0px 10px 4px 0px rgba(0,0,0,0.15);
+}
+.comentario__texto{
+    display: flex;
+    height: auto;
+    padding:10px;
+
+}
+.comentario__datos{
+    height: 50px;
+    border-top-right-radius: 4px;
+    border-top-left-radius: 4px;
+    background-color:#48B2EE ;
+    color: #ffff;
+    display: flex;
+    align-items: center;
+    padding-left:10px;
+}
+.comentario__nombre{
+    margin:0;
+}
+.comentario__box-foto{
+    margin:10px;
+}
+
+/*vermás*/
+.comentario__img{
+    width: 70px;
+    height: 70px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+.ver{
+    margin-top: 40px;
+}
+.ver__link{
+    color: #3BAFBF;
+    text-decoration: none;
+    font-family: 'ABeeZee', sans-serif;
+    margin-left: 10px;
+    text-transform: uppercase;
+    position: relative;
+    padding:8px;
+}
+.ver__link::before{
+    position:absolute;
+    width: 2px;
+    height: 100%;
+    top: 0px;
+    content: '';
+    background: #3BAFBF;
+    opacity:1;
+    transition: all 0.3s;
+    left: 0px;
+}
+.ver__link:hover:before
+{
+    width: 100%;
+    opacity: 0.3;
+}
