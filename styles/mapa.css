@@ -111,7 +111,6 @@
     margin-right: auto;
     font-family: var(--fontText);
     font-size: 1.1rem;
-
 }
 .comentarios_text-input::placeholder{
     color:var(--colorPrimario);
