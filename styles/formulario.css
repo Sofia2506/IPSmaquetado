@@ -21,7 +21,7 @@ h1,h2{
 .tarjeta{
   background-color:#E5E5E5;
   border-radius: 30px;
-  padding:30px;
+  padding:15px;
   display: flex;
   margin:20px auto;
   flex-wrap: wrap;
@@ -81,11 +81,17 @@ h1,h2{
 .opcion__si{
   background-color: #3BAFBF;
 }
+.opcion__si:active{
+  box-shadow: 1px 0px 17px 1px rgba(0,0,0,0.75);
+}
 .opcion__si:hover{
   background-color: #349ba8;
 }
 .opcion__no{
   background-color:#005467;
+}
+.opcion__no:active{
+  box-shadow: 1px 0px 17px 1px rgba(0,0,0,0.75);
 }
 .opcion__no:hover{
   background-color:#013f4d;
@@ -98,14 +104,16 @@ h1,h2{
   border:2px solid#005467;
   border-radius: 32px;
   margin:20px;
-  width: 800px;
+  width: 60%;
+  user-select: none;
 }
 .carga__barra{
   border-top-left-radius: 32px;
   border-bottom-left-radius: 32px;
-  width: 50%;
   background-color:#005467 ;
   height: 100%;
+  width: 0;
+  transition:width 0.5s ease;
 }
 
 /*parte final del resultado*/

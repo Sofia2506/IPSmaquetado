@@ -26,26 +26,29 @@ function formulario() {
     var SI = document.getElementById("si");
     var NO = document.getElementById("no");
     var pregunta = document.getElementsByClassName("pregunta__texto");
+    var barra = document.getElementById("barra-carga");
     var contSI = 0;
     var contNO = 0;
     var cantidad = 0;
-    var veces = 0;
+    var carga = 0;
     //pregunta 1
     SI.onclick = function(){
         contSI++;
         cantidad+=100;
+        carga+=5;
         siguiente();
-        veces++;
-        if(veces==19){
+        cargaFunction();
+        if(carga==100){
             termino();
         }
     }
     NO.onclick = function(){
         contNO++;
         cantidad+=100;
+        carga+=5;
         siguiente();
-        veces++;
-        if(veces==19){
+        cargaFunction();
+        if(carga==100){
             termino();
         }
     }
@@ -53,6 +56,9 @@ function formulario() {
         for(let i = 0 ; i<pregunta.length; i++){
             pregunta[i].style.transform="translateX(-"+cantidad+"%)";
         }
+    }
+    function cargaFunction(){
+        barra.style.width=carga+"%";
     }
     function termino(){
         //contador final
