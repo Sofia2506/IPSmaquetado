@@ -22,6 +22,24 @@
     font-size: 2.5rem;
     text-align: center;
 }
+/*Seccion del mapa*/
+.mapa{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.mapa h1{
+    color: var(--colorPrimario);
+    font-family: var(--fontTitle);
+    font-size: 3.3rem;
+    margin: 8vh 0px;
+    margin-top: 8vh;
+}
+.mapita{
+    margin-top: 20px;
+}
+
 /*Estilos del comentario*/
 .comentario{
     display: flex;
