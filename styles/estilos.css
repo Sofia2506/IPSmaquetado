@@ -175,12 +175,12 @@ header li:nth-child(2),header li:nth-child(3){
     font-weight: 400;
     font-size: 1.1rem;
 }
- .boxVer{
+.boxVer{
     display: flex;
     align-items: center;
     justify-content: center;
 }
-.bloque2 .textConsejos a{
+.boxVer a{
     color:#fff;
     text-decoration: none;
     font-family: 'ABeeZee', sans-serif;
@@ -189,7 +189,7 @@ header li:nth-child(2),header li:nth-child(3){
     position: relative;
     padding:8px;
 }
-.bloque2 .textConsejos a::before{
+.boxVer a::before{
     position:absolute;
     width: 2px;
     height: 100%;
@@ -200,7 +200,7 @@ header li:nth-child(2),header li:nth-child(3){
     transition: all 0.3s;
     left: 0px;
 }
-.bloque2 .textConsejos a:hover:before
+.boxVer a:hover:before
 {
     width: 100%;
     opacity: 0.3;
@@ -217,7 +217,11 @@ header li:nth-child(2),header li:nth-child(3){
     background-image: url(../img/fondo.png);
     display: flex;
     flex-direction: column;
+    align-items: center;
+    justify-content: center;
     text-align: center;
+    color: #3BAFBF;
+
 }
 .titulo {
     font-size: 40px;
@@ -227,74 +231,28 @@ header li:nth-child(2),header li:nth-child(3){
 }
 .contenedor-bloque3 {
 	max-width: 1200px;
-	width: 90%;
 	margin: auto;
 }
-
-/* --- --- CAROUSEL --- --- */
-.carousel__contenedor {
-	position: relative;
+.imagen-texto-contenedor{
+    display: flex;
+    justify-content: center;
 }
-
-.chevron{
-	width: 20px;
+.texto-contenedor{
+    justify-content: center;
+    margin-right: 3%;
+    width: 40%;
 }
-
-.carousel__anterior,
-.carousel__siguiente {
-	position: absolute;
-	display: block;
-	width: 30px;
-	height: 30px;
-	border: none;
-	outline: none;
-	top: calc(50% - 35px);
-	cursor: pointer;
-	line-height: 30px;
-	text-align: center;
-	background: none;
-	color: #3BAFBF;;
-	opacity: 50%;	
+.texto-contenedor p{
+    text-align: center;
+    font-family: 'Rosario', sans-serif;
+    font-size: 30px;
 }
-
-.carousel__anterior:hover,
-.carousel__siguiente:hover {
-	opacity: 100%;
-	border: none;
+.bloque3 .boxVer a, .bloque5 .boxVer a, .bloque6 .boxVer a{
+    color:#3BAFBF;
 }
-.carousel__anterior {
-	left: -30px;
+.bloque3 .boxVer a::before, .bloque5 .boxVer a::before, .bloque6 .boxVer a::before{
+    background: #3BAFBF;
 }
-.carousel__siguiente {
-	right: -30px;
-}
-.carousel__lista {
-	overflow: hidden;
-}
-
-.carousel__indicadores .glider-dot {
-	display: block;
-	width: 10px;
-	height: 10px;
-	background: #3BAFBF;
-	border-radius: 100%;
-	border: none;
-}
-
-.carousel__indicadores .glider-dot:hover {
-	opacity: .5;
-}
-
-.carousel__indicadores .glider-dot.active {
-	opacity: 1;
-}
-
-@media screen and (max-width: 800px) {
-	.bloque3 {
-		padding: 40px 0;
-	}
-}
-
 /*BLOQUE 4*/
 .Bloque4{
     margin: 0;
@@ -381,7 +339,22 @@ header li:nth-child(2),header li:nth-child(3){
     width: 100%;
 }
 
-
+/*BLOQUE 5*/
+.bloque5, .bloque6{
+    color: #3BAFBF;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.bloque5 .imagen-texto-contenedor{
+    flex-direction: row-reverse;
+}
+.bloque5 .imagen-texto-contenedor, .bloque6 .imagen-texto-contenedor{
+    margin: 0px 4%;
+}
+.bloque5 .texto-contenedor, .bloque6 .texto-contenedor{
+    margin: 0px 4%;
+}
 /*Diseño responsive*/
 .burger{
     position: relative;
