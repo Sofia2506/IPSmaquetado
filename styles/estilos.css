@@ -234,6 +234,7 @@ header li:nth-child(2),header li:nth-child(3){
     font-size: 40px;
     font-family: 'ABeeZee', sans-serif;
     margin-bottom: 40px;
+    margin: 35px 40px;
     color: #3BAFBF;
     text-align: center;
 }
@@ -255,8 +256,9 @@ header li:nth-child(2),header li:nth-child(3){
 }
 .texto-contenedor{
     justify-content: center;
-    margin-right: 3%;
+    margin:0 10px;
     width: 40%;
+    flex-grow:1;
 }
 .texto-contenedor p{
     text-align: center;
@@ -434,12 +436,21 @@ img{
     font-size: 1.5rem;
     margin-top: 10px;
 }
+#flecha-izquierda{
+   left: 0;
+}
+#flecha-derecha{
+    right:0;
+}
 .flecha{
     width: 40px;
     height: 40px;
     padding:5px;
     user-select: none;
     border-radius: 50%;
+    position: absolute;
+    background-color: rgba(255, 255, 255, 0.37);
+    z-index: 999;
 }
 .flecha:hover{
     background-color: #04bbd31c;
@@ -450,6 +461,8 @@ img{
     align-items: center;
     margin:15px;
     width: 80%;
+    flex-wrap: wrap;
+    position: relative;
 }
 .comentario__carrusel{
     overflow-x: hidden;
@@ -458,7 +471,7 @@ img{
     align-items: center;
     max-width: 600px;
     min-width: 160px;
-    margin:0 40px;
+    flex-grow: 1;
 }
 /*Diseño responsive*/
 .burger{
