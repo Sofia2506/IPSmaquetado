@@ -10,6 +10,7 @@ html{
 body{
     overflow-x:hidden;
 }
+
 .bloque1 .contenedor{
     position: relative;
     width: 1440px;
@@ -221,13 +222,16 @@ header li:nth-child(2),header li:nth-child(3){
     justify-content: center;
     text-align: center;
     color: #3BAFBF;
-
+    max-width: 1440px;
+    margin-left: auto;
+    margin-right: auto;
 }
 .titulo {
     font-size: 40px;
     font-family: 'ABeeZee', sans-serif;
     margin-bottom: 40px;
     color: #3BAFBF;
+    text-align: center;
 }
 .contenedor-bloque3 {
 	max-width: 1200px;
@@ -262,6 +266,9 @@ header li:nth-child(2),header li:nth-child(3){
     align-items: center;
     justify-content: center;
     min-height: 100vh;
+    max-width: 1440px;
+    margin-left: auto;
+    margin-right: auto;
 }
 .barra h2{
     font-size: 40px;
@@ -340,11 +347,14 @@ header li:nth-child(2),header li:nth-child(3){
 }
 
 /*BLOQUE 5*/
-.bloque5, .bloque6{
+.bloque5, .bloque6,.bloque7{
     color: #3BAFBF;
     display: flex;
     align-items: center;
     flex-direction: column;
+    max-width: 1440px;
+    margin-left: auto;
+    margin-right: auto;
 }
 .bloque5 .imagen-texto-contenedor{
     flex-direction: row-reverse;
@@ -354,6 +364,72 @@ header li:nth-child(2),header li:nth-child(3){
 }
 .bloque5 .texto-contenedor, .bloque6 .texto-contenedor{
     margin: 0px 4%;
+}
+/*Bloue 7*/
+.bloque7{
+    max-width: 1440px;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+}
+.comentario{
+    background-color:#04bbd3;
+    outline : 5px solid #fff;
+    outline-offset:-15px ;
+    text-align: center;
+    position: relative;
+    padding:25px;
+    min-width: 100%;
+    box-sizing: border-box;
+    animation-name:carrusel;
+    animation-duration:7.5s;
+    animation-iteration-count:infinite;
+    transition: all .9s ease;
+}
+.comentario img{
+    height: 40px;
+}
+.comentario p,.comentario h4{
+    color: rgb(255, 255, 255);
+    font-family: 'Rosario', sans-serif;
+}
+.comentario h4 {
+    font-size: 2rem;
+    margin:0;
+    margin-bottom: 10px;
+}
+.comentario p {
+    max-width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 1.5rem;
+    margin-top: 10px;
+}
+.flecha{
+    width: 40px;
+    height: 40px;
+    padding:5px;
+    user-select: none;
+    border-radius: 50%;
+}
+.flecha:hover{
+    background-color: #04bbd31c;
+}
+.box-nosotros{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin:15px;
+    width: 80%;
+}
+.comentario__carrusel{
+    overflow-x: hidden;
+    position: relative;
+    display: flex;
+    align-items: center;
+    max-width: 600px;
+    min-width: 160px;
+    margin:0 40px;
 }
 /*Diseño responsive*/
 .burger{
