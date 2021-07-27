@@ -402,7 +402,7 @@ img{
     margin-right: auto;
     position: relative;
 }
-.comentario{
+.bloque7 .comentario-carrusel__comentario{
     background-color:#04bbd3;
     outline : 5px solid #fff;
     outline-offset:-15px ;
@@ -416,33 +416,33 @@ img{
     animation-iteration-count:infinite;
     transition: all .9s ease;
 }
-.comentario img{
+.bloque7 .comentario-carrusel__comentario img{
     height: 40px;
     user-select: none;
 }
-.comentario p,.comentario h4{
+.bloque7 .comentario-carrusel__comentario p,.comentario-carrusel__comentario h4{
     color: rgb(255, 255, 255);
     font-family: 'Rosario', sans-serif;
 }
-.comentario h4 {
+.bloque7 .comentario-carrusel__comentario h4 {
     font-size: 2rem;
     margin:0;
     margin-bottom: 10px;
 }
-.comentario p {
+.bloque7 .comentario-carrusel__comentario p {
     max-width: 500px;
     margin-left: auto;
     margin-right: auto;
     font-size: 1.5rem;
     margin-top: 10px;
 }
-#flecha-izquierda{
+.bloque7 #flecha-izquierda{
    left: 0;
 }
-#flecha-derecha{
+.bloque7 #flecha-derecha{
     right:0;
 }
-.flecha{
+.bloque7 .flecha{
     width: 40px;
     height: 40px;
     padding:5px;
@@ -452,10 +452,10 @@ img{
     background-color: rgba(255, 255, 255, 0.37);
     z-index: 999;
 }
-.flecha:hover{
+.bloque7 .flecha:hover{
     background-color: #04bbd31c;
 }
-.box-nosotros{
+.bloque7 .box-nosotros{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -464,7 +464,7 @@ img{
     flex-wrap: wrap;
     position: relative;
 }
-.comentario__carrusel{
+.bloque7 .comentario-carrusel{
     overflow-x: hidden;
     position: relative;
     display: flex;

@@ -37,8 +37,7 @@ catch(error){
 
 function carrusel(){
     var cantidad = 0;
-    console.log("funcion carrusel activa")
-    var comentario = document.getElementsByClassName("comentario");
+    var comentario = document.getElementsByClassName("comentario-carrusel__comentario");
     var izquierda = document.getElementById("flecha-izquierda");
     var derecha = document.getElementById("flecha-derecha");
 
