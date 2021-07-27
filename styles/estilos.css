@@ -10,6 +10,7 @@ html{
 body{
     overflow-x:hidden;
 }
+
 .bloque1 .contenedor{
     position: relative;
     width: 1440px;
@@ -210,24 +211,31 @@ header li:nth-child(2),header li:nth-child(3){
 }
 /*BLOQUE 3*/
 .bloque3{
-    margin: 0; 
+    margin:50px auto;
     padding: 0;
     box-sizing: border-box;
-    min-height: 80vh;
+    max-height: 900px;
     background-image: url(../img/fondo.png);
+    background-repeat: repeat;
+    background-size: contain;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     text-align: center;
     color: #3BAFBF;
-
+    max-width: 1440px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 50px;
+    padding-top: 50px;
 }
 .titulo {
     font-size: 40px;
     font-family: 'ABeeZee', sans-serif;
     margin-bottom: 40px;
     color: #3BAFBF;
+    text-align: center;
 }
 .contenedor-bloque3 {
 	max-width: 1200px;
@@ -236,6 +244,14 @@ header li:nth-child(2),header li:nth-child(3){
 .imagen-texto-contenedor{
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
+}
+.imagen-texto-contenedor a img{
+    width: 75%;
+}
+.imagen-texto-contenedor a{
+    margin:10px;
+
 }
 .texto-contenedor{
     justify-content: center;
@@ -255,19 +271,23 @@ header li:nth-child(2),header li:nth-child(3){
 }
 /*BLOQUE 4*/
 .Bloque4{
-    margin: 0;
+    margin:50px auto;
     padding: 0;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    min-height: 100vh;
+    max-height: 900px;
+    max-width: 1440px;
+    margin-left: auto;
+    margin-right: auto;
 }
 .barra h2{
     font-size: 40px;
     font-family: 'ABeeZee', sans-serif;
     margin-bottom: 40px;
     color: #3BAFBF;
+    text-align: center;
 }
 .glide__slide h3{
     font-family: 'Roboto Condensed', sans-serif;
@@ -340,20 +360,105 @@ header li:nth-child(2),header li:nth-child(3){
 }
 
 /*BLOQUE 5*/
-.bloque5, .bloque6{
+.bloque5, .bloque6,.bloque7{
     color: #3BAFBF;
     display: flex;
     align-items: center;
     flex-direction: column;
+    max-width: 1440px;
+    margin:50px auto;
+}
+.bloque5 .imagen-enfermedades ,.bloque6 .imagen-enfermedades{
+    width: 75%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.bloque5 .container-imagen ,.bloque6 .container-imagen{
+    display: flex;
+    justify-content: center;
+    margin:30px 0;
+}
+img{
+    user-select: none;
 }
 .bloque5 .imagen-texto-contenedor{
     flex-direction: row-reverse;
+    
 }
 .bloque5 .imagen-texto-contenedor, .bloque6 .imagen-texto-contenedor{
     margin: 0px 4%;
+    flex-wrap: wrap;
 }
 .bloque5 .texto-contenedor, .bloque6 .texto-contenedor{
     margin: 0px 4%;
+}
+/*Bloue 7*/
+.bloque7{
+    max-width: 1440px;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+}
+.comentario{
+    background-color:#04bbd3;
+    outline : 5px solid #fff;
+    outline-offset:-15px ;
+    text-align: center;
+    position: relative;
+    padding:25px;
+    min-width: 100%;
+    box-sizing: border-box;
+    animation-name:carrusel;
+    animation-duration:7.5s;
+    animation-iteration-count:infinite;
+    transition: all .9s ease;
+}
+.comentario img{
+    height: 40px;
+    user-select: none;
+}
+.comentario p,.comentario h4{
+    color: rgb(255, 255, 255);
+    font-family: 'Rosario', sans-serif;
+}
+.comentario h4 {
+    font-size: 2rem;
+    margin:0;
+    margin-bottom: 10px;
+}
+.comentario p {
+    max-width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 1.5rem;
+    margin-top: 10px;
+}
+.flecha{
+    width: 40px;
+    height: 40px;
+    padding:5px;
+    user-select: none;
+    border-radius: 50%;
+}
+.flecha:hover{
+    background-color: #04bbd31c;
+}
+.box-nosotros{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin:15px;
+    width: 80%;
+}
+.comentario__carrusel{
+    overflow-x: hidden;
+    position: relative;
+    display: flex;
+    align-items: center;
+    max-width: 600px;
+    min-width: 160px;
+    margin:0 40px;
 }
 /*Diseño responsive*/
 .burger{
@@ -439,7 +544,11 @@ header li:nth-child(2),header li:nth-child(3){
         transform: translateX(0);
     }
 }
+
 @media screen and (max-width:650px){
+.Bloque4{
+        max-height: 100vh;
+}
 .bloque1{
     background-color: #3BAFBF ;
 }
