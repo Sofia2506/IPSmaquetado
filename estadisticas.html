@@ -7,6 +7,7 @@
     <link rel="Stylesheet" href="styles/estilos.css">
     <link rel="Stylesheet" href="styles/estadisticas-css.css">
     <link rel="stylesheet" href="styles/normalize.css">
+    <script src="https://kit.fontawesome.com/2c36e9b7b1.js" crossorigin="anonymous"></script>
     <title>Estadísticas</title>
 
 </head>
@@ -45,16 +46,42 @@
     </section>
 
     <section class="estadísticas-bloque2">
-        <div class="bloque2-enfermedades">
-            <h2>Enfermedades</h2>
-            <a class="bloque2-enfermedad">Depresión</a>
-            <a class="bloque2-enfermedad">Psicosis</a>
-            <a class="bloque2-enfermedad">Alcoholismo</a>
-            <a class="bloque2-enfermedad">Violencia</a>
-            <a class="bloque2-enfermedad">Ansiedad</a>
-            <a></a>
-            <a></a>
-        </div>
+        <div class="selectbox">
+			<div class="select" id="select">
+				<div class="contenido-select">
+					<h1 class="titulo">Enfermedades</h1>
+				</div>
+				<i class="fas fa-angle-down"></i>
+			</div>
+
+			<div class="opciones" id="opciones">
+				<a href="#" class="opcion">
+					<div class="contenido-opcion">
+						<h1 class="titulo">Depresión</h1>
+					</div>
+				</a>
+				<a href="#" class="opcion">
+					<div class="contenido-opcion">
+						<h1 class="titulo">Psicosis</h1>
+					</div>
+				</a>
+				<a href="#" class="opcion">
+					<div class="contenido-opcion">
+						<h1 class="titulo">Alcoholismo</h1>
+					</div>
+				</a>
+				<a href="#" class="opcion">
+					<div class="contenido-opcion">
+						<h1 class="titulo">Violencia</h1>
+					</div>
+				</a>
+				<a href="#" class="opcion">
+					<div class="contenido-opcion">
+						<h1 class="titulo">Ansiedad</h1>
+					</div>
+				</a>
+			</div>
+		</div>
 
         <div class="bloque2-estadísticas">
             <div class="bloque2-busquedas">
@@ -83,7 +110,7 @@
             </div>
         </div>       
     </section>
-
+    <script src="js/main.js"></script>
     <script src="js/script.js"></script>
 </body>
 </html>

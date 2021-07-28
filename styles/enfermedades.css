@@ -150,10 +150,7 @@ header li:nth-child(2),header li:nth-child(3){
 .burbuja p{
     width: 93%;
 }
-/*
-.burbujas .burbuja:nth-child(1), .burbujas .burbuja:nth-child(2){
-    margin: 0px 20px;
-}*/
+
 .burbujas, .burbujas2{
     width: 90%;
     display: flex;
@@ -189,6 +186,11 @@ header li:nth-child(2),header li:nth-child(3){
     margin: 5px;
     margin-left: auto;
     margin-right: auto;
+}
+@media screen and (max-width:960px){
+    .imagen-enfermedad{
+        width: 30%;
+    }
 }
 @media screen and (max-width:890px){
 
@@ -249,7 +251,18 @@ header li:nth-child(2),header li:nth-child(3){
     header .navBar-active{
         transform: translateX(0);
     }
+    .burbuja p{
+        font-size: 20px;
+        width: 85%;
+    }
+    .imagen-enfermedad{
+        position: relative;
+    }
+    .enfermedad p{
+        width: 80%;
+    }
 }
+
 @media screen and (max-width:650px){
 .bloque1{
     background-color: #3BAFBF ;
@@ -276,6 +289,27 @@ header .navbar li a{
     display: block;
 }
 }
+@media screen and (max-width: 600px){
+    .burbujas, .burbujas2{
+        flex-direction: column;
+        align-items: center;
+        margin: 0;
+    }
+    .burbuja{
+        margin: 10px 0px;
+    }
+    .imagen-enfermedad{
+        width: 40%;
+    }
+    .enfermedad h2, .enfermedad h1{
+        font-size: 40px;
+        text-align: center;
+    }
+    .enfermedad p{
+        width: 75%;
+    }
+}
+
 @media screen and (max-width:520px){
     .burger{
         cursor: pointer;
