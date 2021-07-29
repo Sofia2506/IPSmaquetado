@@ -215,7 +215,6 @@ header li:nth-child(2),header li:nth-child(3){
     padding: 0;
     box-sizing: border-box;
     max-height: 900px;
-    background-image: url(../img/fondo.png);
     background-repeat: repeat;
     background-size: contain;
     display: flex;

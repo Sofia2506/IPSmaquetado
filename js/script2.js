@@ -10,7 +10,7 @@ new Glide(".images",{
 		750:{
 			perView: 2
 		},
-		400:{
+		440:{
 			focusAt: 0,
 			perView: 1,
 		}

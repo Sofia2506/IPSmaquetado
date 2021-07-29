@@ -1,7 +1,7 @@
 .estadísticas-bloque1{
     position: relative;
     max-width: 1440px;
-    height: 900px;
+    height: 670px;
     display: flex;
     margin-left: auto;
     margin-right: auto;
@@ -10,7 +10,7 @@
 
 .bloque1-figura{
     background-color: #FFD477;
-    width: 70vw;
+    width: 80%;
     height: 100%;
     position: absolute;
     background-repeat: no-repeat;
@@ -146,15 +146,18 @@ a {
     visibility: hidden;
 }
 /*RESPOSIVE BLOQUE 1*/
-@media screen and (max-width:1200px){
-    .estadísticas-bloque1{
-        height: 100vh;
+@media screen and (max-width: 2440px){
+    .bloque1-contenedor-texto h1{
+        text-align: right;
     }
 }
 @media screen and (max-width:1115px){
     
     .bloque1-contenedor-texto h1 {
         text-align: center;
+    }
+    .bloque1-figura{
+        width: 100%;
     }
 }
 @media screen and (max-width: 770px){
