@@ -1,15 +1,17 @@
 .estadísticas-bloque1{
     position: relative;
-    width: 100%;
-    height: 100vh;
+    max-width: 1440px;
+    height: 900px;
     display: flex;
+    margin-left: auto;
+    margin-right: auto;
     justify-content: left;
 }
 
 .bloque1-figura{
     background-color: #FFD477;
     width: 70vw;
-    height: 100vh;
+    height: 100%;
     position: absolute;
     background-repeat: no-repeat;
     background-position: right;
@@ -57,6 +59,8 @@
     padding: 0px 20px;
     font-family: 'Rosario', sans-serif;
     color: #3BAFBF;
+    margin-left: auto;
+    margin-right: auto;
 }
 /*Barra de enfermedades*/
 a {
@@ -65,12 +69,13 @@ a {
 .selectbox{
     background-color: rgba(59, 175, 191, 0.4);
     border-radius: 15px;
-    margin-right: 50px;
+    margin-right: 40px;
+    padding-top: 15px;
 }
 .contenido-opcion {
     display: flex;
     align-items: center;
-    padding-left: 3vw;
+    padding: 10px 18px;
 }
 .titulo{
     font-weight: 700;
@@ -86,11 +91,13 @@ a {
     display: flex;
     flex-direction: column;
     width: 90%;
+    align-items: center;
 }
 
 /*Barra para buscar*/
 .bloque2-busquedas{
     display: flex;
+    grid-column-gap: 25px;
 }
 .bloque2-buscar{
     background-color: rgba(15, 192, 248, 0.02);
@@ -128,30 +135,22 @@ a {
 }
 
 /*Gráfica*/
-.gráfica{
-    width: 670px;
-    margin-left: 190px;
+.grafico{
+    width: 90%;
+    height: 510px;
+    background-color: red;
+    margin-bottom: 10px;
 }
-/*Cifras debajo de la gráfica*/
-.bloque2-cifras{
-    display: grid;
-    grid-template-columns: repeat(1 fr, 3);
-    grid-template-rows: repeat(1 fr, 2);
-    text-align: center;
-    grid-column-gap: 50px;
-    font-size: 30px;
+/*flechita*/
+.flechita{
+    visibility: hidden;
 }
-.cifras{
-    grid-row: 1;
-    margin: 8px 0px;
-}
-.texto{
-    grid-row: 2;
-    margin: 8px 0px;
-    font-weight: 700;
-}
-
 /*RESPOSIVE BLOQUE 1*/
+@media screen and (max-width:1200px){
+    .estadísticas-bloque1{
+        height: 100vh;
+    }
+}
 @media screen and (max-width:1115px){
     
     .bloque1-contenedor-texto h1 {
@@ -169,6 +168,7 @@ a {
     }
     .bloque1-contenedor img{
         margin-top: 45px;
+        width: 55%;
     }
     .bloque1-figura{
         width: 100vw;
@@ -179,20 +179,23 @@ a {
         flex-direction: column;
         align-items: center;
     }
+    .bloque2-estadísticas{
+        width: 100%;
+        align-items: center;
+    }
     .bloque2-busquedas{
         flex-direction: column;
         align-items: center;
         grid-row-gap: 10px;
-    }
-    .bloque2-cifras{
-        grid-column-gap: 40px;
-        font-size: 25px;
+        margin-top: 15px;
     }
 
     .selectbox {
         width: 300px;
         position: relative;
         background: none;
+        margin: 0;
+        padding: 0;
     }
 
     .select {
@@ -214,7 +217,9 @@ a {
     .select:hover {
         box-shadow: 0px 5px 10px rgba(0, 0, 0, .16);
     }
-
+    .flechita{
+        visibility: visible;
+    }
     .select i {
         font-size: 30px;
         margin-left: 30px;
@@ -224,6 +229,7 @@ a {
     .titulo {
         color: #FDF7F7;
         font-size: 22px;
+        margin: 0;
     }
     .contenido-opcion h1{
         font-weight: 0;
@@ -256,8 +262,9 @@ a {
 
     .contenido-opcion {
         width: 100%;
-        padding-left: 0px;
+        padding: 0px;
         transition: .2s ease all;
+        margin: 0;
     }
     .opciones .contenido-opcion h1{
         padding: 14px 20px;
@@ -265,18 +272,47 @@ a {
     .opciones .contenido-opcion:hover {
         background: #9AD8E0;
     }
-
+    .grafico{
+        width: 95%;
+        margin: 0;
+        margin-bottom: 10px;
+        height: 400px;
+    }
 }
 @media screen and (max-width: 665px){
     .bloque1-contenedor-texto p{
         width: 75vw;
         font-size: 27px;
+        margin: 0;
+        margin-left: auto;
+        margin-right: auto;
     }
     .bloque1-contenedor img{
         margin-top: 55px;
+        width: 65%;
     }
-    .bloque1-contenedor-texto h1{
-        font-size: 3rem;
+    .bloque1-contenedor-texto h1, .bloque2-estadísticas h2{
+        font-size: 45px;
     }
-
+    .bloque1-figura{
+        clip-path: circle(65% at 60% 9%);
+    }
+    /*BLOQUE2*/
+    .titulo{
+        font-size: 18px;
+    }
+    .selectbox{
+        width: 200px;
+    }
+    .select i {
+        font-size: 20px;
+    }
+}
+@media screen and (max-width: 440px){
+    .bloque1-contenedor-texto h1, .bloque2-estadísticas h2{
+        font-size: 40px;
+    }
+    .bloque1-contenedor-texto p{
+        font-size: 25px;
+    }
 }
